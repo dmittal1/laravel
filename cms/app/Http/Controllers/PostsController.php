@@ -15,9 +15,9 @@ class PostsController extends Controller
      */
     public function index($id)
     {
+        //
 
-        return "its working the number is ". $id;
-
+        return "its working the number " . $id;
     }
 
     /**
@@ -53,7 +53,7 @@ class PostsController extends Controller
     {
         //
 
-        return "this is the show method yayyyyy " . $id;
+        return "this is the show method yayyyyy" .$id;
     }
 
     /**
@@ -65,6 +65,8 @@ class PostsController extends Controller
     public function edit($id)
     {
         //
+
+
     }
 
     /**
@@ -92,18 +94,17 @@ class PostsController extends Controller
 
     public function contact(){
 
-      //$people = ['Dinesh', 'Jose', 'James', 'Peter', 'Maria'];
-
+      // $people = ['Edwin', 'Jose', 'James', 'Peter', 'Maria'];
       $people = [];
+      return view('contact',compact('people'));
 
-      return view('contact', compact('people'));
-      //return "Hello";
     }
 
-    public function show_post($id, $name, $password){
+    public function show_post($id,$name,$password){
+
+      // return view('post')->with('id',$id);
 
       return view('post', compact('id','name','password'));
+
     }
-
-
 }

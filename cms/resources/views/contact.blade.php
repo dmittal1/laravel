@@ -1,7 +1,4 @@
-
 @extends('layouts.app')
-
-
 
 @section('content')
 
@@ -13,7 +10,7 @@
 
   @foreach($people as $person)
 
-  <li>{{$person}}</li>
+    <li>{{$person}}</li>
 
   @endforeach
 
@@ -21,10 +18,13 @@
 
 @endif
 
+
+
+
 @stop
 
 @section('footer')
 
-  <!-- <script>alert('Hello Visitor')</script> -->
+<!-- <script>alert('Hello Visitor')</script> -->
 
-  @stop
+@stop
